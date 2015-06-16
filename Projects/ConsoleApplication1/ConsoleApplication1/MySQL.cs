@@ -19,14 +19,11 @@ namespace ConsoleApplication1
         public static void addToDatabase(String name, String score)
         {
             Random random = new Random();
-            server = "localhost";
-            database = "scores";
-            uid = "Root";
-            password = "Udhsn83nudH";
             string connectionString;
             connectionString = "server=127.0.0.1;uid=root;" + "pwd=Udhsn83nudH;database=scores;";
             connection = new MySqlConnection(connectionString);
             connection.Open();
+            string query = "SELECT * FROM scores ORDERED BY id DESC LIMIT 1"
             string query = "INSERT INTO scores (id, name, score) VALUES('"+random.Next(0, 50)+"', 'h', '"+Convert.ToInt32(score)+"')";
 
 
