@@ -23,13 +23,16 @@ namespace ConsoleApplication1
             connectionString = "server=127.0.0.1;uid=root;" + "pwd=Udhsn83nudH;database=scores;";
             connection = new MySqlConnection(connectionString);
             connection.Open();
-            string query = "SELECT * FROM scores ORDERED BY id DESC LIMIT 1"
+            string query = "SELECT LAST_INSERT_ID()"
+            
             string query = "INSERT INTO scores (id, name, score) VALUES('"+random.Next(0, 50)+"', 'h', '"+Convert.ToInt32(score)+"')";
 
 
             //create command and assign the query and connection from the constructor
             MySqlCommand cmd = new MySqlCommand(query, connection);
-
+            IDataRead read = cmd.ExecuteReader();
+            
+            
             //Execute command
             cmd.ExecuteNonQuery();
 
