@@ -69,7 +69,6 @@ namespace Clicky_Game
             this.pictureBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Game_KeyDown);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
-            //this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label1
             // 
@@ -80,7 +79,6 @@ namespace Clicky_Game
             this.label1.Size = new System.Drawing.Size(73, 28);
             this.label1.TabIndex = 2;
             this.label1.Text = "Hits: 0";
-            //this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -128,7 +126,7 @@ namespace Clicky_Game
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(851, 58);
+            this.pictureBox3.Location = new System.Drawing.Point(random(0, (Screen.PrimaryScreen.Bound.Width - 25)),random(0, (Screen.PrimaryScreen.Bound.Width - 25)));
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(75, 75);
             this.pictureBox3.TabIndex = 8;
