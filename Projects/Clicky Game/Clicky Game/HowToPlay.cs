@@ -24,26 +24,12 @@ namespace Clicky_Game
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            switch (e.KeyData)
-            {
-                case Keys.Escape:
-                    {
-                        Console.WriteLine("You pressed z");
-                        break;
-                    }
-            }
+            
         }
 
         private void richTextBox1_KeyDown(object sender, KeyEventArgs e)
         {
-            switch (e.KeyData)
-            {
-                case Keys.Escape:
-                    {
-                        Console.WriteLine("You pressed z");
-                        break;
-                    }
-            }
+            
         }
     }
 }
