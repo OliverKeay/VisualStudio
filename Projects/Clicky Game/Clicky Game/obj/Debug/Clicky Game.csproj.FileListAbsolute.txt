@@ -1,0 +1,14 @@
+c:\users\oli\documents\visual studio 2013\Projects\Clicky Game\Clicky Game\bin\Debug\Clicky Game.exe.config
+c:\users\oli\documents\visual studio 2013\Projects\Clicky Game\Clicky Game\bin\Debug\Clicky Game.exe
+c:\users\oli\documents\visual studio 2013\Projects\Clicky Game\Clicky Game\bin\Debug\Clicky Game.pdb
+c:\users\oli\documents\visual studio 2013\Projects\Clicky Game\Clicky Game\obj\Debug\Clicky_Game.MainWindow.resources
+c:\users\oli\documents\visual studio 2013\Projects\Clicky Game\Clicky Game\obj\Debug\Clicky_Game.Properties.Resources.resources
+c:\users\oli\documents\visual studio 2013\Projects\Clicky Game\Clicky Game\obj\Debug\Clicky Game.csproj.GenerateResource.Cache
+c:\users\oli\documents\visual studio 2013\Projects\Clicky Game\Clicky Game\obj\Debug\Clicky Game.exe
+c:\users\oli\documents\visual studio 2013\Projects\Clicky Game\Clicky Game\obj\Debug\Clicky Game.pdb
+c:\users\oli\documents\visual studio 2013\Projects\Clicky Game\Clicky Game\obj\Debug\Clicky_Game.Game.resources
+C:\Users\Oli\Documents\Visual Studio 2013\Projects\Clicky Game\Clicky Game\obj\Debug\Clicky_Game.HowToPlay.resources
+C:\Users\Oli\Documents\Visual Studio 2013\Projects\Clicky Game\Clicky Game\obj\Debug\Clicky Game.csprojResolveAssemblyReference.cache
+C:\Users\Oli\Documents\GitHub\VisualStudio\Projects\Clicky Game\Clicky Game\bin\Debug\Clicky Game.exe.config
+C:\Users\Oli\Documents\GitHub\VisualStudio\Projects\Clicky Game\Clicky Game\obj\Debug\Clicky Game.exe
+C:\Users\Oli\Documents\GitHub\VisualStudio\Projects\Clicky Game\Clicky Game\obj\Debug\Clicky Game.pdb
