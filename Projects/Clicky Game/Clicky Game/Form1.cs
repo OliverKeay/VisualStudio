@@ -49,6 +49,8 @@ namespace Clicky_Game
                                 label4.Visible = true;
                                 label5.Visible = true;
                                 label5.Text = "You hit " + Program.hits + " out of the " + Program.targets + " targets in " + Program.time + " milliseconds!";
+                                Socketing.score = Program.time;
+                                Socketing.sendScore();
                             }
                             Random random = new Random();
                             pictureBox1.Location = new System.Drawing.Point(random.Next((Screen.PrimaryScreen.Bounds.Width - 25)), random.Next((Screen.PrimaryScreen.Bounds.Height - 25)));
@@ -72,6 +74,8 @@ namespace Clicky_Game
                                 label4.Visible = true;
                                 label5.Visible = true;
                                 label5.Text = "You hit " + Program.hits + " out of the " + Program.targets + " targets in " + Program.time + " milliseconds!";
+                                Socketing.score = Program.time;
+                                Socketing.sendScore();
                             }
                             Random random = new Random();
                             pictureBox1.Location = new System.Drawing.Point(random.Next((Screen.PrimaryScreen.Bounds.Width - 25)), random.Next((Screen.PrimaryScreen.Bounds.Height - 25)));
@@ -101,6 +105,8 @@ namespace Clicky_Game
                                 label4.Visible = true;
                                 label5.Visible = true;
                                 label5.Text = "You hit " + Program.hits + " out of the " + Program.targets + " targets in " + Program.time + " milliseconds!";
+                                Socketing.score = Program.time;
+                                Socketing.sendScore();
                             }
                             Random random = new Random();
                             pictureBox1.Location = new System.Drawing.Point(random.Next((Screen.PrimaryScreen.Bounds.Width - 25)), random.Next((Screen.PrimaryScreen.Bounds.Height - 25)));
@@ -124,6 +130,8 @@ namespace Clicky_Game
                                 label4.Visible = true;
                                 label5.Visible = true;
                                 label5.Text = "You hit " + Program.hits + " out of the " + Program.targets + " targets in " + Program.time + " milliseconds!";
+                                Socketing.score = Program.time;
+                                Socketing.sendScore();
                             }
                             Random random = new Random();
                             pictureBox1.Location = new System.Drawing.Point(random.Next((Screen.PrimaryScreen.Bounds.Width - 25)), random.Next((Screen.PrimaryScreen.Bounds.Height - 25)));
@@ -151,11 +159,13 @@ namespace Clicky_Game
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            Socketing.server.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Restart();
+            Socketing.server.Close();
         }
 
     }
