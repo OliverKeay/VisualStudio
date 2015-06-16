@@ -4,3 +4,4 @@ C:\Users\Oli\Documents\GitHub\VisualStudio\Projects\ConsoleApplication1\ConsoleA
 C:\Users\Oli\Documents\GitHub\VisualStudio\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\MySql.Data.dll
 C:\Users\Oli\Documents\GitHub\VisualStudio\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 C:\Users\Oli\Documents\GitHub\VisualStudio\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\Oli\Documents\GitHub\VisualStudio\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\Server.csprojResolveAssemblyReference.cache

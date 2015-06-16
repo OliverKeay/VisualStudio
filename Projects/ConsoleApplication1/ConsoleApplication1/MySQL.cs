@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
@@ -11,30 +12,36 @@ namespace ConsoleApplication1
     {
 
         private static MySqlConnection connection;
-        private static string server;
-        private static string database;
-        private static string uid;
-        private static string password;
 
         public static void addToDatabase(String name, String score)
         {
             Random random = new Random();
-            server = "localhost";
-            database = "scores";
-            uid = "Root";
-            password = "Udhsn83nudH";
             string connectionString;
             connectionString = "server=127.0.0.1;uid=root;" + "pwd=Udhsn83nudH;database=scores;";
             connection = new MySqlConnection(connectionString);
             connection.Open();
-            string query = "INSERT INTO scores (id, name, score) VALUES('"+random.Next(0, 50)+"', 'h', '"+Convert.ToInt32(score)+"')";
 
+            string query = "INSERT INTO times (name, time) VALUES('Ollie', '" + Convert.ToInt32(score) + "')";
 
             //create command and assign the query and connection from the constructor
             MySqlCommand cmd = new MySqlCommand(query, connection);
 
             //Execute command
             cmd.ExecuteNonQuery();
+
+            query = "SELECT * FROM times WHERE time=(SELECT MAX(time) FROM times)";
+
+            cmd.ExecuteNonQuery();
+
+            MySqlDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                string data1 = reader.GetString("id");
+                string data2 = reader.GetString("name");
+                Console.WriteLine(data1 + data2);
+            }
+
 
             //close connection
             try
