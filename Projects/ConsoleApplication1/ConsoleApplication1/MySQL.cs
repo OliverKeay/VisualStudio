@@ -17,7 +17,7 @@ namespace ConsoleApplication1
         {
             Random random = new Random();
             string connectionString;
-            connectionString = "server=127.0.0.1;uid=root;" + "pwd=Udhsn83nudH;database=scores;";
+            connectionString = "server=127.0.0.1;uid=root;" + "pwd=Password;database=scores;";
             connection = new MySqlConnection(connectionString);
             connection.Open();
             string query = "INSERT INTO times (name, time, misses) VALUES('"+name+"', '" + Convert.ToInt32(score) + "', '"+misses+"')";
