@@ -36,8 +36,14 @@ namespace Clicky_Game
             Console.WriteLine("Getting there");
 
             
-            
-            server.Send(Encoding.ASCII.GetBytes(score.ToString()));
+            //Sending name
+
+
+            //Sending score
+            server.Send(Encoding.ASCII.GetBytes("Ollie" + " " + score.ToString() + " " + Program.misses.ToString()));
+
+            //Sending misses
+
             //server.Close();
            
                 

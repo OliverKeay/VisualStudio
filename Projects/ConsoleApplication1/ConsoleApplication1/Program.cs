@@ -50,12 +50,14 @@ namespace ConsoleApplication1
             Thread ctThread = new Thread(doChat);
             ctThread.Start();
         }
+
+        public static string[] final;
+
         private void doChat()
         {
             int requestCount = 0;
             byte[] bytesFrom = new byte[2048];
             string dataFromClient = null;
-            string rCount = null;
             requestCount = 0;
 
             while ((true))
@@ -67,7 +69,26 @@ namespace ConsoleApplication1
                     networkStream.Read(bytesFrom, 0, bytesFrom.Length);
                     dataFromClient = System.Text.Encoding.ASCII.GetString(bytesFrom);
                     Console.WriteLine(" >> " + "From client-" + clNo +": "+ dataFromClient);
-                    MySQL.addToDatabase("Ollie", dataFromClient);
+                    final = dataFromClient.Split(' ');
+                    string name = "";
+                    string time = "";
+                    string misses = "";
+                    for (int i = 0; i < final.Length; i++)
+                    {
+                        if (i == 0)
+                        {
+                            name = final[i];
+                        }
+                        else if (i == 1)
+                        {
+                            time = final[i];
+                        }
+                        else 
+                        {
+                            misses = final[i];
+                        }
+                    }
+                        MySQL.addToDatabase(name, time, Convert.ToInt32(misses));
                     break;
 
                    

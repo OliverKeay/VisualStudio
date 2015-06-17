@@ -13,7 +13,7 @@ namespace ConsoleApplication1
 
         private static MySqlConnection connection;
 
-        public static void addToDatabase(String name, String score)
+        public static void addToDatabase(String name, String score, int misses)
         {
             Random random = new Random();
             string connectionString;
@@ -21,7 +21,7 @@ namespace ConsoleApplication1
             connection = new MySqlConnection(connectionString);
             connection.Open();
 
-            string query = "INSERT INTO times (name, time) VALUES('Ollie', '" + Convert.ToInt32(score) + "')";
+            string query = "INSERT INTO times (name, time, misses) VALUES('"+name+"', '" + Convert.ToInt32(score) + "', '"+misses+"')";
 
             //create command and assign the query and connection from the constructor
             MySqlCommand cmd = new MySqlCommand(query, connection);
