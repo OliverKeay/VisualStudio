@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,13 +20,6 @@ namespace ConsoleApplication1
             connectionString = "server=127.0.0.1;uid=root;" + "pwd=Udhsn83nudH;database=scores;";
             connection = new MySqlConnection(connectionString);
             connection.Open();
-<<<<<<< HEAD
-=======
-            string query = "SELECT LAST_INSERT_ID()"
-            
-            string query = "INSERT INTO scores (id, name, score) VALUES('"+random.Next(0, 50)+"', 'h', '"+Convert.ToInt32(score)+"')";
->>>>>>> origin/master
-
             string query = "INSERT INTO times (name, time, misses) VALUES('"+name+"', '" + Convert.ToInt32(score) + "', '"+misses+"')";
 
             //create command and assign the query and connection from the constructor
