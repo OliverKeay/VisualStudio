@@ -70,6 +70,7 @@ namespace ConsoleApplication1
                     dataFromClient = System.Text.Encoding.ASCII.GetString(bytesFrom);
                     Console.WriteLine(" >> " + "From client-" + clNo +": "+ dataFromClient);
                     final = dataFromClient.Split(' ');
+                    Console.WriteLine(final);
                     string name = "";
                     string time = "";
                     string misses = "";
@@ -88,6 +89,7 @@ namespace ConsoleApplication1
                             misses = final[i];
                         }
                     }
+                    Console.WriteLine(name + time + misses);
                         MySQL.addToDatabase(name, time, Convert.ToInt32(misses));
                     break;
 
